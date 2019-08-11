@@ -1,0 +1,86 @@
+.ridaakh {
+    color:rgb(42, 197, 148);
+    font-weight: bold;
+    font-family: monospace;
+    width: 600px;
+    margin-left: 30%;
+    margin-top:15%;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  
+  .anim {
+  
+    position: relative;
+    font-family: sans-serif;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    /* background: linear-gradient(90deg,#E25CB6,rgb(255, 158, 143),
+       rgb( 89, 182, 208),rgb(248, 68, 89), rgb(67, 214, 166)); */
+       background: linear-gradient(90deg,rgb(250, 38, 179),rgb(12, 255, 12),
+       rgb(92, 255, 27),rgb(154, 243, 176), rgba(95, 184, 12, 0.952));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 8s ease-in-out infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(115, 230, 191, 0.8);
+    
+  }
+  
+  @keyframes animate {
+      0% {
+      background-position: -500%;
+    }
+    50%{
+      background-position: 0%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  nav ul{
+      list-style-type: none;
+      
+  }
+  nav ul li{
+      display:inline-flex;
+      
+  }
+  nav ul li a{
+      text-decoration: none;
+  }
+  footer nav{
+      clear: both; 
+      margin-top: auto;
+      display: table-row;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+  }
+  footer nav ul li{
+      padding: 10px;
+      /* margin-left: 180px; */
+      margin-left: 5%;
+  }
+  footer nav ul li div p{
+      font-size: 0.8em;
+  }
+  footer nav ul li a{
+      color:rgb(25, 167, 119);
+  }
+  body{
+    background:rgba(255, 255, 255, 0.8);
+   
+    
+  }
+  .image img{
+      margin-top: -400px;
+        width: 450px;
+        transition: all 2s;
+  }
+
+  .image img:hover{
+      transform:scale(1.6);
+  }

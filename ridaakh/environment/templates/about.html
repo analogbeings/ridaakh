@@ -1,0 +1,38 @@
+{% from  "_helper.html" import render_field %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Baltistani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/main.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <h2 style="float:left;padding: 0px;margin: 0px;color:rgb(25, 167, 119);" class="">
+                    <span>About Page</span></h2></li>
+                <li style="float:right;">View &nbsp;<a href="#"> release notes </a>  &nbsp;for <span  style="color:rgb(25, 167, 119);">&nbsp; ridaakh &nbsp;</span>1.0</li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+      <form method="post" action="/about">
+        <dl>
+        {{ form.csrf_token }}
+        {{ render_field(form.username) }}
+        {{ render_field(form.password) }}
+        <input type="submit" value="Login" />
+      </dl>
+      </form>
+    </main>
+  </body>
+  </html>
