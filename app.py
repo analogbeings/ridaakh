@@ -18,7 +18,7 @@ def home(req, resp):
     welcome= "You are seeing this page because you have not configured any root.\
     Move to app.py and customize the route according to your needs.\
     To find more information visit our documentation page."
-    inp= inpp.TextInput()
+    #inp= inpp.TextInput()
     resp.html = app.template("home.html",context={"title": "Awesome Framework",
      "name": name, "fullname": fullname, "nickname": nickname, "success": success, })
 
